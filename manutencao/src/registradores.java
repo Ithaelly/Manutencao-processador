@@ -3,7 +3,6 @@ public class registradores {
     private int MAR =0;
     private String MBR;
     private String IR;
-    private String comando;
     private String[] mem = new String[100];
             
     public int getPc() {
@@ -36,14 +35,6 @@ public class registradores {
 
     public void setIR(String IR) {
         this.IR = IR;
-    }
-
-    public String getComando() {
-        return comando;
-    }
-
-    public void setComando(String comando) {
-        this.comando = comando;
     }
 
     public String[] getMem() {

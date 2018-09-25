@@ -1,9 +1,9 @@
 
 public class memoria { 
     int mar=0;
-    String []mem = new String[100];
+    String []mem = new String[101];
     
-    public void memoria(){
+    public memoria(){
         for(int i=4;i<100; i++){
             mem[i] ="0";
         } 
