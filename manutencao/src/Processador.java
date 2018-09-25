@@ -1,9 +1,18 @@
 
 public class Processador {
-    registradores r = new registradores();
-    
-    
+    unidadeDeControle uc = new unidadeDeControle();
+    registradores r= new registradores();
+     
     public void busca(){
-        r.colocandoPcDentroDeMar();
+       uc.colocandoPcDentroDeMar();
+    }
+    public void busca2(){    
+        uc.colocandoMbrDentroDeIr();
+    }
+    public void decodifica(){
+        uc.dividirVetor();
+    }
+    public void buscarDados(){
+        uc.pegarEnderecoColocarNoMar();
     }
 }

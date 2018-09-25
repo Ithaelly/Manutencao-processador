@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class computador {
     public static void main(String[] args) {
         memoria mem = new memoria();
-        Processador p = new Processador();
+        Processador p = new Processador();    
         
         System.out.println("############### SEJA BEM VINDO ###############");
         System.out.println("  ");
@@ -18,13 +18,16 @@ public class computador {
         Scanner ler = new Scanner(System.in);
         System.out.println("  ");
         
-        p.busca();
-        /*mem.setMem(p.getMar());//continuar daqui
-        p.setMbr(Mem.getDados());    
-        p.busca2();
-        p.decodifica();
-        p.buscaDados();
-        p.executa();
-        p.salva();*/
+        p.busca();//MAR=pc
+        mem.setMem(p.r.getMAR());//passa o "mar" como a posição da memória 
+        p.r.setMBR(mem.getMem());//pega o valor da "memória" nesta posição, e coloca dentro de "mbr"    
+        p.busca2();//coloca "mbr" dentro de "ir"
+        p.decodifica();//dividir os dados do vetor
+        p.buscarDados();//pega o endereco e colocar no mar
+        mem.setMem(p.r.getMAR());//passa o "mar" como a posição da memória 
+        p.r.setMBR(mem.getMem());//pega o valor da "memória" nesta posição, e coloca dentro de "mbr"    
+        //p.buscaDados2();
+        /*p.executa();//tipo faz a soma se for somar
+        p.salva();//pegar o valor que está em mbr e colocar dentro da memória*/
     }
 }

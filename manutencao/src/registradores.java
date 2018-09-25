@@ -1,7 +1,6 @@
 public class registradores {
     private int pc = 0;
     private int MAR =0;
-    private int endereco=0;
     private String MBR;
     private String IR;
     private String comando;
@@ -21,14 +20,6 @@ public class registradores {
 
     public void setMAR(int MAR) {
         this.MAR = MAR;
-    }
-
-    public int getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(int endereco) {
-        this.endereco = endereco;
     }
 
     public String getMBR() {
