@@ -26,7 +26,6 @@ public class computador {
                     p.buscarDados();//pega o endereco e colocar no mar
                     mem.setMem(p.r.getMAR());//passa o "mar" como a posição da memória 
                     p.r.setMBR(mem.getMem());//pega o valor da "memória" nesta posição, e coloca dentro de "mbr"    
-                    /*p.executa();//tipo faz a soma se for somar
-                    p.salva();//pegar o valor que está em mbr e colocar dentro da memória*/
+                    p.executa();//tipo faz a soma se for somar
     }
 }

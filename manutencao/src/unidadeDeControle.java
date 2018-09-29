@@ -8,10 +8,28 @@ public class unidadeDeControle{
 
     registradores r = new registradores();
     
+    public void setEndereco(int endereco){
+        this.endereco = endereco;
+    }
+    
+    public int getEndereco(){
+        return endereco;
+    }
+    
+    public void setComando(String comando){
+        this.comando = comando;
+    }
+    
+    public String getComando(){
+        return comando;
+    }
+    
     public void atualizaRegistradores(registradores i){
        r=i;
     }
 
+    
+    
     public void colocandoPcDentroDeMar(){ //pega o valor do "pc" e coloca dentro do "mar"
         r.setMAR(r.getPc());
         r.incremetaPC();

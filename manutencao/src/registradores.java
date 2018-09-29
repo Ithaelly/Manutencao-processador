@@ -25,7 +25,7 @@ public class registradores {
         return MBR;
     }
 
-    public void setMBR(String MBR) {
+    public void setMBR(String MBR) {     
         this.MBR = MBR;
     }
 

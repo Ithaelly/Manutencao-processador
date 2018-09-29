@@ -1,23 +1,22 @@
 
 public class unidadeLogicaEAritmetica {
     //faz as soma, sub, div, mult
+    int a;
+    int b;
     
-    registradores r = new registradores();
-    unidadeDeControle uc= new unidadeDeControle();
+    public void setSoma(int a, int b){
+        a= a + b;
+    }
     
-    public void executar(){
-        /*if(uc.spl[0].equals("Carregar")){
-            System.out.println("entrou em carregar");
-            MAR=endereco;//colocando dentro do mar o endereco do IR
-            MBR=mem[MAR];
-            int acc=Integer.valueOf(MBR);
-            System.out.println("ACC: "+ acc);
-        }
-        else if(comando=="Soma"){
-            
-        }
-        else if(comando=="Salvar"){
-            
-        }*/
+    public int getSoma(){
+        return a;
+    }
+    
+    public void setSubtrair(int a, int b){
+        a= a - b;
+    }
+    
+    public int getSubtrair(){
+        return a;
     }
 }

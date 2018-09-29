@@ -17,15 +17,16 @@ public class memoria {
         mem[7] = "VaParaSeZero 10";
         mem[8] = "VaPara 0";
         mem[10] = "VaPara 10";
-        mem[90] = " 5";
-        mem[91] = " 1";
-        mem[97] = " 3";
-        mem[98] = " 4";
-        mem[99] = " 5";
-        mem[100] = " 2";    
+        mem[90] = "5";
+        mem[91] = "1";
+        mem[97] = "3";
+        mem[98] = "4";
+        mem[99] = "5";
+        mem[100] = "2";    
     }
      
     public String getMem() { //mostrar o valor da memória
+        System.out.println("memoria: "+mar);
         return mem[mar];
     }
 
