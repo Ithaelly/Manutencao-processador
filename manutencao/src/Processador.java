@@ -35,17 +35,14 @@ public class Processador {
         }
         else if(uc.getComando()=="Soma"){
              ula.setSoma(acc, Integer.parseInt(r.getMBR()));   //manda os parametros(acc, mbr) para fazer a soma
-             ula.getSoma();
+             acc = ula.getSoma();
         }
         else if(uc.getComando()=="Subtrair"){
             ula.setSubtrair(acc, Integer.parseInt(r.getMBR())); //manda os parametros(acc, mbr) para fazer a subtrair
-            ula.getSubtrair();
+            acc = ula.getSubtrair();
         }
-        /*else if(uc.getComando()=="Salvar"){ //pegar o valor que está em mbr e colocar dentro da memória
-            ver se estes comandos estão corretos
-            MBR=ACC;
-            mem.setMem(p.r.getMAR());//passa o "mar" como a posição da memória 
-            mem.setMem(r.getMBR());//pega o valor da "memória" nesta posição, e coloca dentro de "mbr" 
-        }*/
+        else if(uc.getComando()=="Salvar"){ //pegar o valor que está em mbr e colocar dentro da memória
+            r.setMBR( Integer.toString(acc));//coloca acc dentro de mbr (mbr=acc;)
+        }
     }
 }

@@ -27,5 +27,9 @@ public class computador {
                     mem.setMem(p.r.getMAR());//passa o "mar" como a posição da memória 
                     p.r.setMBR(mem.getMem());//pega o valor da "memória" nesta posição, e coloca dentro de "mbr"    
                     p.executa();//tipo faz a soma se for somar
+                    if(p.uc.getComando()=="Salvar"){
+                        mem.setMem(p.r.getMAR());//passa o "mar" como a posição da memória 
+                       // mem.setMem(p.r.getMBR());//pega o valor de mbr e coloca dentro da memória
+                     }              
     }
 }
