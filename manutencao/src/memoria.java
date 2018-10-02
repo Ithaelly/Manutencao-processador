@@ -32,5 +32,4 @@ public class memoria {
     public void setMem(int mar) { //pega o valor da memória
         this.mar = mar;
     }
- 
 }
